@@ -5,8 +5,8 @@ import os
 import sys
 import urllib.request
 
-client_id = "9h22ag5rp3"
-client_secret = "3BKUlxDua35n9u8ZlL89bIeeASc0RXVlLq88TfY3"
+client_id = "ID"
+client_secret = "PASSWORD"
 
 url = "https://naveropenapi.apigw.ntruss.com/voice/v1/tts"
 
