@@ -19,9 +19,6 @@ cmdLists = [
         [u'앞에 뭐가 있는지 알려 줘',     '잠시만 기다려주십시오',   1],
         [u'전방 탐색', '잠시만 기다려주십시오', 1]
         ]
-        # [u'이름이 뭐니', '저는 아슬리 입니다.',                 1],
-        # [u'나이는',    "26",                1],
-        # [u'뭘 좋아해',   '다 좋아합니다.',                     1]]
 
 def CommandProc(stt):
     cmd = stt.strip()
@@ -30,7 +27,7 @@ def CommandProc(stt):
     print(type(cmd))
 
     for cmdList in cmdLists:
-        print("\ncmd: " + cmd + "\n cmdList: " + cmdList[0])
+        print("\n cmd: " + cmd + "\n cmdList: " + cmdList[0])
         if cmd == cmdList[0]:
             
             if cmdList[0] == "앞에 뭐가 있는지 알려 줘" or cmdList[0] == "전방 탐색":
@@ -103,25 +100,6 @@ def main():
         if stt is None:
             print("stt END")
             break
-
-        # if (stt == "뭐가 있는지 알려줘" ):
-        #     f = open("getLabels.txt", "r")     ##open Labels file
-        #     data = f.read()
-        #     data.strip()
-        #     print("current detect")
-        #     if data == '0':
-        #         tts.play("아무것도 찾을 수 없습니다.")
-        #     else:
-        #         tts.play(data)
-
-        #     print(data)
-        #     f.close() 
-
-          
-        # print(stt)
-
-        # if('끝내자' in stt):
-        #     break
 
 if __name__ == '__main__':
     main()
